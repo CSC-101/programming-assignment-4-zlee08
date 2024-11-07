@@ -1,0 +1,6 @@
+filter-gt:Education.High School or Higher:burrito
+filter-lt:Education.High School or:60
+invalid:Education.High School or Higher:10
+filter-lt:Education.High School or Higher:10:12
+percent:Ethnicities.Two or More Races
+display
