@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>data.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+data.py</font>
+</center></td></tr></table>
+<pre><span class="s0">class </span><span class="s1">CountyDemographics</span><span class="s2">:</span>
+    <span class="s3"># Initialize a new CountyDemographics object.</span>
+    <span class="s3"># input: the county's age demographics data as a dictionary</span>
+    <span class="s3"># input: the county's name as a string</span>
+    <span class="s3"># input: the county's education demographics data as a dictionary</span>
+    <span class="s3"># input: the county's ethnicities demographics data as a dictionary</span>
+    <span class="s3"># input: the county's income demographics data as a dictionary</span>
+    <span class="s3"># input: the county's population demographics data as a dictionary</span>
+    <span class="s3"># input: the county's state as a string</span>
+    <span class="s0">def </span><span class="s1">__init__</span><span class="s2">(</span><span class="s1">self</span><span class="s2">,</span>
+                  <span class="s1">age</span><span class="s2">: </span><span class="s1">dict</span><span class="s2">[</span><span class="s1">str</span><span class="s2">,</span><span class="s1">float</span><span class="s2">],</span>
+                  <span class="s1">county</span><span class="s2">: </span><span class="s1">str</span><span class="s2">,</span>
+                  <span class="s1">education</span><span class="s2">: </span><span class="s1">dict</span><span class="s2">[</span><span class="s1">str</span><span class="s2">,</span><span class="s1">float</span><span class="s2">],</span>
+                  <span class="s1">ethnicities</span><span class="s2">: </span><span class="s1">dict</span><span class="s2">[</span><span class="s1">str</span><span class="s2">,</span><span class="s1">float</span><span class="s2">],</span>
+                  <span class="s1">income</span><span class="s2">: </span><span class="s1">dict</span><span class="s2">[</span><span class="s1">str</span><span class="s2">,</span><span class="s1">float</span><span class="s2">],</span>
+                  <span class="s1">population</span><span class="s2">: </span><span class="s1">dict</span><span class="s2">[</span><span class="s1">str</span><span class="s2">,</span><span class="s1">float</span><span class="s2">],</span>
+                  <span class="s1">state</span><span class="s2">: </span><span class="s1">str</span><span class="s2">):</span>
+        <span class="s1">self</span><span class="s2">.</span><span class="s1">age </span><span class="s2">= </span><span class="s1">age</span>
+        <span class="s1">self</span><span class="s2">.</span><span class="s1">county </span><span class="s2">= </span><span class="s1">county</span>
+        <span class="s1">self</span><span class="s2">.</span><span class="s1">education </span><span class="s2">= </span><span class="s1">education</span>
+        <span class="s1">self</span><span class="s2">.</span><span class="s1">ethnicities </span><span class="s2">= </span><span class="s1">ethnicities</span>
+        <span class="s1">self</span><span class="s2">.</span><span class="s1">income </span><span class="s2">= </span><span class="s1">income</span>
+        <span class="s1">self</span><span class="s2">.</span><span class="s1">population </span><span class="s2">= </span><span class="s1">population</span>
+        <span class="s1">self</span><span class="s2">.</span><span class="s1">state </span><span class="s2">= </span><span class="s1">state</span>
+
+
+    <span class="s3"># Provide a developer-friendly string representation of the object.</span>
+    <span class="s3"># input: CountyDemographics for which a string representation is desired. </span>
+    <span class="s3"># output: string representation</span>
+    <span class="s0">def </span><span class="s1">__repr__</span><span class="s2">(</span><span class="s1">self</span><span class="s2">):</span>
+        <span class="s0">return </span><span class="s4">'CountyDemographics({}, {}, {}, {}, {}, {}, {})'</span><span class="s2">.</span><span class="s1">format</span><span class="s2">(</span>
+                <span class="s1">self</span><span class="s2">.</span><span class="s1">age</span><span class="s2">,</span>
+                <span class="s1">self</span><span class="s2">.</span><span class="s1">county</span><span class="s2">,</span>
+                <span class="s1">self</span><span class="s2">.</span><span class="s1">education</span><span class="s2">,</span>
+                <span class="s1">self</span><span class="s2">.</span><span class="s1">ethnicities</span><span class="s2">,</span>
+                <span class="s1">self</span><span class="s2">.</span><span class="s1">income</span><span class="s2">,</span>
+                <span class="s1">self</span><span class="s2">.</span><span class="s1">population</span><span class="s2">,</span>
+                <span class="s1">self</span><span class="s2">.</span><span class="s1">state</span>
+            <span class="s2">)</span>
+</pre>
+</body>
+</html>
